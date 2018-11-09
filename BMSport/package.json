@@ -1,0 +1,19 @@
+{
+  "name": "bmsport",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "truffle": "^4.1.14",
+    "truffle-flattener": "^1.2.9"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "flat": "truffle-flattener ./contracts/BMSport.sol > ./flattener/BMSport.sol && truffle-flattener ./contracts/BMPlayerBook.sol > ./flattener/BMPlayerBook.sol && truffle-flattener ./contracts/TinyBanker.sol > ./flattener/TinyBanker.sol"
+  },
+  "author": "",
+  "license": "ISC"
+}
